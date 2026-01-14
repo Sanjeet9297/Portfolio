@@ -11,7 +11,7 @@ import {
   Projects,
   Skills,
   Training,
-  // Experience,
+  Experience,
 } from "./components/index.js";
 import { useState } from "react";
 
@@ -52,8 +52,8 @@ function App() {
           <Hero />
           <Wrapper>
             <Skills />
-            {/* <Experience /> */}
             <Training/>
+            <Experience />
           </Wrapper>
           <Projects />
           <Wrapper>

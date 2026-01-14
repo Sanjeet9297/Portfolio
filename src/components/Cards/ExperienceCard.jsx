@@ -107,10 +107,11 @@ const Duration = styled.div`
 `;
 
 const Description = styled.div`
-width: 100%;
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
+  margin-bottom: 8px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -120,7 +121,16 @@ const Skills = styled.div`
   width: 100%;
   display: flex;
   gap: 12px;
-  margin-top: -10px;
+  margin-top: 12px;
+`;
+
+const SkillsLabel = styled.span`
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 15px;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const ItemWrapper = styled.div`
@@ -153,20 +163,17 @@ const ExperienceCard = ({ experience }) => {
       </Top>
       <Description>
         {experience.desc}
-        {experience?.skills && (
-          <>
-            <br />
-            <Skills>
-              <b>Skills: </b>
-              <ItemWrapper>
-                {experience.skills.map((skill, index) => (
-                  <Skill key={index}>{skill}</Skill>
-                ))}
-              </ItemWrapper>
-            </Skills>
-          </>
-        )}
       </Description>
+      {experience?.skills && (
+        <Skills>
+          <SkillsLabel>Skills: </SkillsLabel>
+          <ItemWrapper>
+            {experience.skills.map((skill, index) => (
+              <Skill key={index}>{skill}</Skill>
+            ))}
+          </ItemWrapper>
+        </Skills>
+      )}
       {experience.doc && (
         <a href={experience.doc} target="new">
           <Document src={experience.doc} />
