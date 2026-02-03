@@ -10,7 +10,7 @@ export const Bio = {
     "I’m Sanjeet Kumar, a Full Stack Developer currently working at Cling Infotech. I’m a Computer Engineering graduate from RGPV and have internship experience at C-DOT, Delhi, where I worked on telecom automation and dashboards. I specialize in the MERN stack and enjoy building scalable, user-focused applications.",
   github: "https://github.com/Sanjeet9297",
   resume:
-    "https://drive.google.com/file/d/1B_UwuYzRUJazEqYVOAAnRqO0UTmwuSFE/view?usp=sharing",
+    "https://drive.google.com/file/d/1okwSe1leonceMUUoAiO7juiyBPQ-NQld/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sanjeet-kumar-722478258",
   twitter: "https://x.com/Sanjeet60282832?t=lzakqrTxB0WJ2qKB0Eqv_w&s=09",
   insta: "https://www.instagram.com/_itz_sanjeet_01/",
