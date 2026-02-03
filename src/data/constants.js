@@ -68,6 +68,11 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
       },
+      {
+        name: "TypeScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+      },
     ],
   },
   {
@@ -233,7 +238,19 @@ export const experiences = [
     company: "Cling Info Tech Works Pvt. Ltd., Ghaziabad",
     date: "2025 – Present",
     desc: "Working as a Full Stack Web Developer with hands-on experience in building scalable web applications using MERN stack. Responsible for developing REST APIs, creating responsive React dashboards, implementing role-based authentication, PDF invoice generation, automation using Selenium, and deploying production-ready applications.",
-    skills: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "REST APIs", "Tailwind CSS", "Bootstrap", "Selenium Automation", "Git & GitHub"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "REST APIs",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Selenium Automation",
+      "Git & GitHub",
+    ],
     doc: "", // optional: experience letter or offer letter URL
   },
 ];
