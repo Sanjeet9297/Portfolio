@@ -132,7 +132,7 @@ const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
   font-size: 18px;
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const MobileMenu = styled.div`
@@ -147,7 +147,7 @@ const MobileMenu = styled.div`
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   transition: all 0.6s ease-in-out;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ open }) => (open ? "100%" : "0")};
