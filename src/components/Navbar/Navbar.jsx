@@ -154,7 +154,7 @@ const MobileMenu = styled.div`
   z-index: ${({ open }) => (open ? "1000" : "-1000")};
 `;
 
-const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -192,7 +192,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          {/* <NavLink href="#experience">Experience</NavLink> */}
+          <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#training">Training</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
@@ -220,7 +220,15 @@ const Navbar = ({ toggleTheme, darkMode }) => {
       {open && (
         <MobileMenu open={open}>
           <MobileMenuLink
-            to="#about"
+            href="#about"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Home
+          </MobileMenuLink>
+          <MobileMenuLink
+            href="#about"
             onClick={() => {
               setOpen(!open);
             }}
@@ -228,23 +236,23 @@ const Navbar = ({ toggleTheme, darkMode }) => {
             About
           </MobileMenuLink>
           <MobileMenuLink
-            to="#skills"
+            href="#skills"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Skills
           </MobileMenuLink>
-          {/* <MobileMenuLink
-            to="#experience"
+          <MobileMenuLink
+            href="#experience"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Experience
-          </MobileMenuLink> */}
+          </MobileMenuLink>
           <MobileMenuLink
-            to="#training"
+            href="#training"
             onClick={() => {
               setOpen(!open);
             }}
@@ -252,7 +260,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
             Training
           </MobileMenuLink>
           <MobileMenuLink
-            to="#projects"
+            href="#projects"
             onClick={() => {
               setOpen(!open);
             }}
@@ -260,7 +268,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
             Projects
           </MobileMenuLink>
           <MobileMenuLink
-            to="#education"
+            href="#education"
             onClick={() => {
               setOpen(!open);
             }}

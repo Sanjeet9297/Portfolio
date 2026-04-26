@@ -1,13 +1,13 @@
 export const Bio = {
   name: "Sanjeet Kumar",
   roles: [
-    "Full Stack Web Developer",
+    "Full Stack Developer",
     "MERN Stack Developer",
     "Programmer",
     "Reacti-Native Developer",
   ],
   description:
-    "I’m Sanjeet Kumar, a Full Stack Developer currently working at Cling Infotech. I’m a Computer Engineering graduate from RGPV and have internship experience at C-DOT, Delhi, where I worked on telecom automation and dashboards. I specialize in the MERN stack and enjoy building scalable, user-focused applications.",
+    "I’m currently working as a Full Stack Developer at Abhhyam Ventures India Pvt. Ltd., where I build cross-platform mobile applications using React Native with a focus on performance and scalability. I also develop and maintain web applications using PHP, ensuring smooth backend operations. I work on integrating REST APIs for seamless data flow and continuously improve application performance and stability.",
   github: "https://github.com/Sanjeet9297",
   resume:
     "https://drive.google.com/file/d/1mmeJ_8XNPXZF34zm7ftuCprRYWpBtqYC/view?usp=sharing",

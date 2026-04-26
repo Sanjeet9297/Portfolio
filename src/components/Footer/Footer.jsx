@@ -93,26 +93,44 @@ const Footer = () => {
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          {/* <NavLink href="#experience">Experience</NavLink> */}
+          <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#training">Training</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display" rel="noopener noreferrer">
+          <SocialMediaIcon
+            href={Bio.linkedin}
+            target="display"
+            rel="noopener noreferrer"
+          >
             <LinkedInIcon />
-            </SocialMediaIcon>
-            <SocialMediaIcon href={Bio.github} target="display" rel="noopener noreferrer">
+          </SocialMediaIcon>
+          <SocialMediaIcon
+            href={Bio.github}
+            target="display"
+            rel="noopener noreferrer"
+          >
             <GitHubIcon />
-           </SocialMediaIcon> 
-          <SocialMediaIcon href={Bio.insta} target="display" rel="noopener noreferrer">
+          </SocialMediaIcon>
+          <SocialMediaIcon
+            href={Bio.insta}
+            target="display"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href="mailto:oksanjeetkr124@gmail.com" target="display" rel="noopener noreferrer">
-              <EmailIcon />
+          <SocialMediaIcon
+            href="mailto:oksanjeetkr124@gmail.com"
+            target="display"
+            rel="noopener noreferrer"
+          >
+            <EmailIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; {currentYear} Sanjeet Kumar. All rights reserved.</Copyright>
+        <Copyright>
+          &copy; {currentYear} Sanjeet Kumar. All rights reserved.
+        </Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

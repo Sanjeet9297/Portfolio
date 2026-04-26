@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Bio } from "../../data/constants.js";
 import Typewriter from "typewriter-effect";
-import  HeroImg  from "../../assets/assets.js";
+import HeroImg from "../../assets/assets.js";
 import { BgAnimation } from "../../components/index.js";
 
 const HeroContainer = styled.div`
@@ -114,17 +114,17 @@ const Title = styled.div`
 
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 20px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 32px;
   @media (max-width: 960px) {
     text-align: center;
   }
   @media (max-width: 640px) {
-    font-size: 22px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 32px;
     margin-bottom: 16px;
   }
 `;
@@ -166,11 +166,25 @@ const ResumeButton = styled.a`
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
   background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
   box-shadow: ${({ theme }) =>
-    theme.mode === "dark" ? "20px 20px 60px #1F2634, -20px -20px 60px #1F2634" : "none"};
+    theme.mode === "dark"
+      ? "20px 20px 60px #1F2634, -20px -20px 60px #1F2634"
+      : "none"};
 
   &:hover {
     transform: scale(1.05);
@@ -185,7 +199,6 @@ const ResumeButton = styled.a`
     font-size: 18px;
   }
 `;
-
 
 const Img = styled.img`
   position: relative;
@@ -230,7 +243,7 @@ const Hero = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="_blank">
-            Download My Resume
+              Download My Resume
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

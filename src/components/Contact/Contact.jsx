@@ -132,52 +132,47 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  const [open, setOpen] = useState(false);
+  const [status, setStatus] = useState({
+    open: false,
+    message: "",
+    severity: "success",
+  });
   const form = useRef();
 
-
-   // Send the initial email
   const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         (result) => {
-          setOpen(true);
+          setStatus({
+            open: true,
+            message: "Message sent successfully!",
+            severity: "success",
+          });
           form.current.reset();
-          console.log(result);
+          console.log(result.text);
         },
         (error) => {
+          setStatus({
+            open: true,
+            message: "Failed to send message. Please try again.",
+            severity: "error",
+          });
           console.log(error.text);
-        }
-      );
-    // Send the confirmation email
-    const senderEmail = form.current.user_email.value; // Assuming the form has an input with name="user_email"
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID, // New template ID for confirmation email
-        {
-          to_email: senderEmail,
-          to_name: form.current.user_name.value, // Assuming the form has an input with name="user_name"
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (confirmationResult) => {
-          console.log('Confirmation email sent:', confirmationResult);
-        },
-        (confirmationError) => {
-          console.log('Error sending confirmation email:', confirmationError.text);
-        }
       );
   };
 
+  const handleClose = () => {
+    setStatus((prev) => ({ ...prev, open: false }));
+  };
 
   return (
     <Container>
@@ -201,11 +196,10 @@ const Contact = () => {
         </ContactForm>
 
         <Snackbar
-          open={open}
+          open={status.open}
           autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
+          onClose={handleClose}
+          message={status.message}
         />
       </Wrapper>
     </Container>
