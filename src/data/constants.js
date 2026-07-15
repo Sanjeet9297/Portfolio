@@ -10,7 +10,7 @@ export const Bio = {
     "I’m currently working as a Full Stack Developer at Abhhyam Ventures India Pvt. Ltd., where I build cross-platform mobile applications using React Native with a focus on performance and scalability. I also develop and maintain web applications using PHP, ensuring smooth backend operations. I work on integrating REST APIs for seamless data flow and continuously improve application performance and stability.",
   github: "https://github.com/Sanjeet9297",
   resume:
-    "https://drive.google.com/file/d/1mmeJ_8XNPXZF34zm7ftuCprRYWpBtqYC/view?usp=sharing",
+    "https://drive.google.com/file/d/1pqdpzlCmU0f2vkq4xaWU-hhflR-neAhb/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sanjeet-kumar-722478258",
   twitter: "https://x.com/Sanjeet60282832?t=lzakqrTxB0WJ2qKB0Eqv_w&s=09",
   insta: "https://www.instagram.com/_itz_sanjeet_01/",
