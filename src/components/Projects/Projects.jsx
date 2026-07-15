@@ -135,6 +135,20 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
+          {toggle === "mobile app" ? (
+            <ToggleButton
+              active
+              value="mobile app"
+              onClick={() => setToggle("mobile app")}
+            >
+              MOBILE APP&apos;S
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="mobile app" onClick={() => setToggle("mobile app")}>
+              MOBILE APP&apos;S
+            </ToggleButton>
+          )}
+          <Divider />
           {toggle === "gui application" ? (
             <ToggleButton
               active

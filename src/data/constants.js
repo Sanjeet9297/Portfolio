@@ -3,11 +3,13 @@ export const Bio = {
   roles: [
     "Full Stack Developer",
     "MERN Stack Developer",
+    "React-Native Developer",
+    "PHP Developer",
+    "Laravel Developer",
     "Programmer",
-    "Reacti-Native Developer",
   ],
   description:
-    "I’m currently working as a Full Stack Developer at Abhhyam Ventures India Pvt. Ltd., where I build cross-platform mobile applications using React Native with a focus on performance and scalability. I also develop and maintain web applications using PHP, ensuring smooth backend operations. I work on integrating REST APIs for seamless data flow and continuously improve application performance and stability.",
+    "I'm a results-oriented Full Stack Developer with 1.6 year of professional experience in designing, developing, and deploying scalable web and cross-platform mobile applications. I build and maintain robust web applications using MERN Stack (MongoDB, Express.js, React.js, Node.js) and PHP/Laravel, complemented by cross-platform mobile development using React Native. My technical focus includes RESTful API development, third-party integrations, performance optimization, and database management, ensuring reliable, user-centric digital solutions. I am currently working at Ardh Sainik Group, contributing to the development, maintenance, deployment, and enhancement of business-critical web and mobile applications while collaborating with cross-functional teams.",
   github: "https://github.com/Sanjeet9297",
   resume:
     "https://drive.google.com/file/d/1pqdpzlCmU0f2vkq4xaWU-hhflR-neAhb/view?usp=sharing",
@@ -265,17 +267,18 @@ export const experiences = [
   },
   {
     id: 0,
-    img: "https://ardhsainikcanteen.com/public/assets/website/images/logo.png",
+    img: "https://ardhsainikmall.com/public/web/img/logoo.jpg",
     role: "Full Stack Developer",
-    company: "Abhhyam Ventures India Pvt. Ltd. Delhi",
+    company: "ArdhSainik Group",
     date: "April 2026 – Present",
-    desc: "Full Stack Developer with experience in developing responsive web and mobile applications using React, React Native, and PHP. Focused on API integration, performance optimization, and delivering stable user-friendly solutions.",
+    desc: "Full Stack Developer with experience in developing scalable web and cross-platform mobile applications using MERN Stack, React Native, PHP, and Laravel. Focused on REST API integration, performance optimization, and delivering stable, user-friendly solutions. Currently working at Ardh Sainik Group, contributing to the development, maintenance, deployment, and enhancement of business-critical web and mobile applications while collaborating with cross-functional teams.",
     skills: [
       "React.js",
       "React Native",
       "Firebase",
       "PHP",
       "Laravel",
+      "MySQL",
       // "JavaScript",
       // "REST APIs",
       // "Tailwind CSS",
@@ -318,6 +321,46 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 5,
+    title: "QuickCart - Ecommerce Web",
+    date: "Aug 2025 - Sep 2025",
+    description:
+      "A modern, high-performance frontend eCommerce platform built with Next.js and Tailwind CSS. Features dynamic product list layout, responsive UI design, customizable shopping layouts, product details, and smooth transitions for a seamless shopping experience.",
+    image: "/ecommerce_web_mockup.png",
+    tags: ["Next.js", "Tailwind CSS", "React.js"],
+    category: "web app",
+    github: "https://github.com/Sanjeet9297",
+    webapp: "",
+    member: [
+      {
+        name: "Sanjeet Kumar",
+        img: "https://res.cloudinary.com/dkeehisnj/image/upload/v1750227731/sanjeet_img_dpslet.jpg",
+        linkedin: "https://www.linkedin.com/in/sanjeet-kumar-722478258",
+        github: "https://github.com/Sanjeet9297",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Real-time Chat App",
+    date: "Feb 2026 - March 2026",
+    description:
+      "A cross-platform mobile chat application built using React Native and Expo Router. Integrated with a Node.js/Express backend and Socket.io to support secure real-time messaging, typing indicators, read/unread message statuses, dynamic navigation, and profile personalization.",
+    image: "/chat_app_mockup.png",
+    tags: ["React Native", "Socket.io", "Node js", "Express", "Expo Router"],
+    category: "mobile app",
+    github: "https://github.com/Sanjeet9297",
+    webapp: "",
+    member: [
+      {
+        name: "Sanjeet Kumar",
+        img: "https://res.cloudinary.com/dkeehisnj/image/upload/v1750227731/sanjeet_img_dpslet.jpg",
+        linkedin: "https://www.linkedin.com/in/sanjeet-kumar-722478258",
+        github: "https://github.com/Sanjeet9297",
+      },
+    ],
+  },
   {
     id: 3,
     title: "Todo App",
